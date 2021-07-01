@@ -27,6 +27,7 @@ function App() {
 
 
 
+
  
 
   return (
@@ -38,7 +39,7 @@ function App() {
             <GameTitle nintendoGameCharacters={nintendoGameCharacters} />
           </Route>
           <Route path="/Form">
-            <Form />
+            <Form setNintendoGameCharacters={setNintendoGameCharacters} />
           </Route>
           <Route path="/Characters">
             <Home nintendoGameCharacters={nintendoGameCharacters} />

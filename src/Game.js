@@ -17,7 +17,7 @@ function Game({nintendoGameCharacters, gameTitle}) {
     const game = nintendoGameCharacters.filter((character) => {// this filters through each character
         return character.amiiboSeries === gameTitle //this matches the character amiiboSeries to the gameTitles
     }).map((character) => {
-        return <li className="flex-item" key={character.name}><img src={character.image} alt={character.name} /><p>{character.name}</p></li>
+        return <li className="flex-item" key={character.image}><img src={character.image} alt={character.name} /><p>{character.name}</p></li>
     })
 
 
