@@ -2,16 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
@@ -28,11 +18,46 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+#navBar {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 0 auto;
+  width: 600px;
+  padding: 20px;
+}
+
+img {
+  max-height: 359px;
+  max-width: 288px;
+}
+
+/* flext-container syles the div parent and the individual ul */
+.flex-container {
+  /*flex layout context for Home component and Game component*/
+  display: flex;
+
+  flex-flow: row wrap;
+  
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+ /* flex-item styles the individual li inside of the ul */
+.flex-item {
+  padding: 5px;
+  margin-top: 10px;
+  line-height: 10px;
+  max-width: 308px;
+  min-width: 308px;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
 }
