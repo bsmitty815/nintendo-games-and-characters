@@ -6,6 +6,8 @@ import NavBar from "./NavBar"
 import Home from "./Home"
 import GameTitle from "./GameTitle"
 import Form from "./Form"
+import nintendoWallpaper from "./images/nintendo-wallpaper.jpeg"
+import nintendoCharactersImage from "./images/nintendo-characters.png"
 
 // getting the dbjson serer to run terminal command - npm run server
 // getting react to run command - npm start
@@ -15,7 +17,7 @@ const DATA = "http://localhost:3004/amiibo"
 
 function App() {
   const [nintendoGameCharacters, setNintendoGameCharacters] = useState([])
-
+  
   useEffect(() => {
 
     fetch(DATA)
@@ -28,12 +30,14 @@ function App() {
 
 
 
+
  
 
   return (
     <div className="App">
       <h1>Nintendo Characters And Games</h1>
       <NavBar />
+      <img id="nintendoHeaderWallpaper" src={nintendoWallpaper} alt="nintendo-wallpaper" />
         <Switch>
           <Route path="/GameTitle">
             <GameTitle nintendoGameCharacters={nintendoGameCharacters} />
@@ -51,6 +55,7 @@ function App() {
               <h1>404 not found</h1>
           </Route>
         </Switch>
+      <img id="nintendoHeaderWallpaper" src={nintendoCharactersImage} alt="nintendo-characters" />
     </div>
   );
 }

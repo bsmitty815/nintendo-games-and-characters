@@ -11,17 +11,17 @@ function NavBar() {
 
             <NavLink to="/Characters">
                 <span>
-                    <button>Characters</button>
+                    <button className="myNavButton">Characters</button>
                 </span>
             </NavLink>
             <NavLink to="/GameTitle">
                 <span>
-                    <button>Games</button>
+                    <button className="myNavButton">Games</button>
                 </span>
             </NavLink>
             <NavLink to="/Form">
                 <span>
-                    <button>Form</button>
+                    <button className="myNavButton">Form</button>
                 </span>
             </NavLink>
         </div>

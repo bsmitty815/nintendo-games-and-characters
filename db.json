@@ -2387,8 +2387,14 @@
     {
       "id": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_041d0001-018a0502.png",
       "amiiboSeries": "Animal Crossing",
-      "character": "Penelope",
+      "name": "Penelope",
       "image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_041d0001-018a0502.png"
+    },
+    {
+      "id": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_041e0001-015f0502.png",
+      "amiiboSeries": "Animal Crossing",
+      "name": "Chadder",
+      "image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_041e0001-015f0502.png"
     }
   ]
 }

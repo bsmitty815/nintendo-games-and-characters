@@ -21,7 +21,7 @@ function GameTitle({nintendoGameCharacters}) {
         //..new set(array) makes a new array without the duplicates in the original array
         namesOnlyArray.sort()//sorting the array by alphabertical order
         
-        const gameTitleButton = namesOnlyArray.map((title) => {
+        const gameTitleButton = namesOnlyArray.map((title) => { //create game component and then add below as function
             return <Game  key={title} nintendoGameCharacters={nintendoGameCharacters} gameTitle={title}/>
         })
 

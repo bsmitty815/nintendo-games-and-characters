@@ -6,7 +6,7 @@ function Home({nintendoGameCharacters}) {
     const displayCharacters = () => {
         const charactersInfo = [...nintendoGameCharacters]
         return charactersInfo.map((character) => {
-            return <ul className="flex-container" key={character.image}><li className="flex-item"><img src={character.image} alt={character.name} /><p>{character.name}</p></li></ul>
+            return <ul className="flex-container" key={character.image}><li className="flex-item"><img src={character.image} alt={character.name} className="character-pictures"/><p>{character.name}</p></li></ul>
         })
     }
             

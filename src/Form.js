@@ -1,15 +1,18 @@
 import React, {useState} from 'react'
+import { useHistory } from 'react-router-dom'
 
 const DATA = "http://localhost:3004/amiibo"
 
 function Form({setNintendoGameCharacters}) {
-    // this is where you can add a game image and new character
-    const [formData, setFormData] = useState({
+    const history = useHistory() // using the use history hook once a form is submitted
+    const defaultForm = { // sets form data
         "id": "",
         "amiiboSeries": "",
-        "character": "",
+        "name": "",
         "image": ""
-    }) //saving the data to be called back by a call back function and resent
+    }
+    
+    const [formData, setFormData] = useState(defaultForm)//saving the data to be called back by a call back function and resent
 
     function handleChange(event) { //adding the new character data 
         setFormData({
@@ -30,7 +33,7 @@ function Form({setNintendoGameCharacters}) {
             body: JSON.stringify({
                 id: formData.image,
                 amiiboSeries: formData.amiiboSeries,
-                character: formData.character,
+                name: formData.name,
                 image: formData.image
             })
         })
@@ -38,6 +41,8 @@ function Form({setNintendoGameCharacters}) {
         fetch(DATA)
         .then(response => response.json())
         .then(data => setNintendoGameCharacters(data)) //adding new data to state
+        setFormData(defaultForm) // this will empty out the form data
+        history.push('/') // this will send you to the home page
 
     }
 
@@ -66,7 +71,7 @@ function Form({setNintendoGameCharacters}) {
                 <label>
                     Character Name:
                     <input
-                    name="character"
+                    name="name"
                     type="text"
                     placeholder="Character Name"
                     onChange={handleChange}

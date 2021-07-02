@@ -1,3 +1,6 @@
+
+
+
 .App {
   text-align: center;
 }
@@ -18,8 +21,19 @@
   color: #61dafb;
 }
 
+/* h1 tag css */
+h1 {
+  font-family: 'Tourney', cursive;
+  font-size: 50px;
 
+}
 
+/* p tag css */
+p {
+  font-family: 'Dosis', sans-serif;
+}
+
+/* nav bar css*/
 #navBar {
   display: flex;
   justify-content: space-around;
@@ -29,7 +43,8 @@
   padding: 20px;
 }
 
-img {
+/* character pictures css*/
+.character-pictures {
   max-height: 359px;
   max-width: 288px;
 }
@@ -60,4 +75,78 @@ img {
   font-size: 20px;
   text-align: center;
   align-items: center;
+  
+
+}
+
+#nintendoHeaderWallpaper {
+  width: stretch;
+  display: flex;
+}
+
+/* Nav button css */
+.myNavButton {
+	box-shadow:inset -1px 1px 0px 0px #bbdaf7;
+	background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+	background-color:#79bbff;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:14px 40px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+.myNavButton:hover {
+	background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+	background-color:#378de5;
+}
+.myNavButton:active {
+	position:relative;
+	top:1px;
+}
+
+/* game titles buttons */
+.gameTitleButton {
+  backface-visibility: hidden;
+position: relative;
+cursor: pointer;
+display: inline-block;
+white-space: nowrap;
+background: rgba(0%,0%,0%,0);
+border-radius: 100px;
+border: 5px solid #ff3c00;
+border-width: 5px 5px 5px 5px;
+padding: 3px 10px 2px 10px;
+  color: #ff2600;
+font-size: 25px;
+font-family: Pretendo;
+font-weight: 200;
+font-style: normal;
+letter-spacing: 1px
+}
+.gameTitleButton > div {
+  color: #999;
+font-size: 10px;
+font-family: Helvetica Neue;
+font-weight: initial;
+font-style: normal;
+text-align: center;
+margin: 0px 0px 0px 0px
+}
+.gameTitleButton > i {
+  font-size: 1em;
+border-radius: 0px;
+border: 0px solid transparent;
+border-width: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+margin: 0px 0px 0px 0px;
+position: static
+}
+.gameTitleButton > .ld {
+  font-size: initial
 }
