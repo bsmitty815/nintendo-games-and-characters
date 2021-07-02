@@ -1,6 +1,6 @@
 # Nintendo Games And Characters
 
-![image](/images/app-image.png)
+![image](src/images/app-image.png)
 
 This app shows you all different Nintendo characters from different Nintendo games. You can click on the games tab and see all the different games and then from there you can click through each game to see what characters are in the game. There is also a form page where you can add your own image of a character from a the game of your choosing.
 
@@ -42,4 +42,4 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 # Resources
 This application was built using React, HTML, CSS, and JavaScript
 
-![image](/images/app-image-two.png)
+![image](src/images/app-image-two.png)
