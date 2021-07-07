@@ -21,7 +21,7 @@ function NavBar() {
             </NavLink>
             <NavLink to="/Form">
                 <span>
-                    <button className="myNavButton">Form</button>
+                    <button className="myNavButton">Add Character</button>
                 </span>
             </NavLink>
         </div>

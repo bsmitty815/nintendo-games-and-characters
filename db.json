@@ -2395,6 +2395,12 @@
       "amiiboSeries": "Animal Crossing",
       "name": "Chadder",
       "image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_041e0001-015f0502.png"
+    },
+    {
+      "id": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04290001-00700502.png",
+      "amiiboSeries": "Animal Crossing",
+      "name": "Octavian",
+      "image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04290001-00700502.png"
     }
   ]
 }
